@@ -1,0 +1,42 @@
+{
+	"name": "porfolio",
+	"description": "Portfolio",
+	"version": "1.0.5",
+	"author": "Lucas Henrique",
+	"private": true,
+	"dependencies": {
+		"animate-sass": "tgdev/animate-sass",
+		"bootstrap-sass": "^3.3.6",
+		"family.scss": "^1.0.6",
+		"jquery-form": "^3.50.0",
+		"jquery-mask-plugin": "^1.14.0",
+		"jquery-placeholder": "^2.3.1",
+		"jquery-validation": "^1.15.0",
+		"js-cookie": "^2.1.2",
+		"normalize.css": "^4.1.1"
+	},
+	"devDependencies": {
+		"autoprefixer": "^6.3.6",
+		"browser-sync": "^2.13.0",
+		"del": "~2.2.0",
+		"gulp": "^3.9.1",
+		"gulp-awspublish": "^3.3.0",
+		"gulp-bump": "^1.0.0",
+		"gulp-imagemin": "^3.0.1",
+		"gulp-jshint": "^2.0.1",
+		"gulp-load-plugins": "^1.2.4",
+		"gulp-newer": "^1.2.0",
+		"gulp-plumber": "^1.1.0",
+		"gulp-postcss": "^6.1.1",
+		"gulp-sass": "^2.3.2",
+		"gulp-sass-lint": "^1.1.1",
+		"gulp-sourcemaps": "^1.6.0",
+		"gulp-util": "^3.0.7",
+		"gulp-zip": "^3.2.0",
+		"jshint": "^2.9.2",
+		"jshint-stylish": "^2.2.0",
+		"postcss-flexibility": "^1.0.3",
+		"vinyl-named": "^1.1.0",
+		"webpack-stream": "^3.2.0"
+	}
+}

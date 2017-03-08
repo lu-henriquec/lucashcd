@@ -1,0 +1,35 @@
+@charset "UTF-8";
+// ===============================================================
+/* HEADER */
+// ===============================================================
+header {
+	width:100%;
+	border-bottom:3px solid $blue-d;
+	background-color:$blue-r;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:5;
+}
+
+.logo {
+	display: inline-block;
+	img{
+		transition: margin 300ms ease-in-out;
+		display: block;
+		width: 153px;
+		margin: 28.5px 0;
+		@include breakpoint(small, 'max') {
+			width: 91px;
+			margin: 16.5px 0;
+		}
+	}
+}
+
+.fixed{
+	.logo {
+		img{
+			margin: 16.5px 0;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+@keyframes move {
+   0% {
+       -webkit-transform: translateY(0px);
+   }
+
+   100% {
+       -webkit-transform: translateY(25px);
+   }
+}
+
+
+@keyframes shadow {
+    0% {
+        background-color: transparent;
+        transform: scale(0)
+    }
+
+    100% {
+        background-color: rgba(0,0,0,0.75);
+        transform: scale(1)
+    }
+}

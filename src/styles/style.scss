@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/*! =================================================
+	* Theme Name: Layout - Portfolio
+	* Description: CSS desenvolvido para Lucas.
+	* Author: Lucas Henrique
+	* Author URI: http://www.lucashcd.com
+	* Version: 1.0
+	=================================================
+*/
+
+// ===============================================================
+/* @IMPORTS */
+// ===============================================================
+
+@import 'helpers/variables';
+@import 'helpers/animation';
+@import 'helpers/functions';
+@import 'helpers/mixins';
+
+//FLEXBOX GRID
+// @import 'components/grid';
+
+
+//Animations
+// @import 'helpers/animate';
+
+// Utility helpers
+@import 'helpers/normalize';
+@import 'helpers/helpers';
+// @import 'helpers/icons';
+// @import 'helpers/z-index';
+
+
+// Base styles
+@import 'base/fonts';
+@import 'base/main';
+// @import 'base/vertical-rhythm';
+@import 'base/selection';
+@import 'base/type';
+
+// Component styles Common
+@import 'components/container';
+
+// Site components
+@import 'components/modal';
+@import 'components/curriculo';
+@import 'components/perfil';
+// @import 'components/header';
+// @import 'components/footer';
+
+// @import 'components/buttons';
+// @import 'components/price';
+// @import 'components/slick';
+

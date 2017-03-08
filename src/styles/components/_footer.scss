@@ -1,0 +1,80 @@
+@charset 'UTF-8';
+// ===============================================================
+/* FOOTER */
+// ===============================================================
+footer{
+	background-color:$blue-d;
+	color:#fff;
+
+	div[class*="col-"] {
+		padding-top: 25px;
+		padding-bottom: 86px;
+		@include breakpoint(medium, 'max') {
+			padding-top: 56px;
+			padding-bottom: 40px;
+		}
+	}
+
+	p{
+		margin:0;
+		@include font-size(12px);
+		line-height:40px;
+		color:$blue-l;
+	}
+
+	.box{
+		display: table;
+		@include breakpoint(medium, 'max') {
+			margin: 0 auto;
+		}
+		&>div{
+			display: table-cell;
+			padding:8px;
+			border:1px dashed $blue-l;
+			border-left:none;
+			vertical-align:middle;
+			&:first-child{
+				border-left:1px dashed $blue-l;
+			}
+		}
+	}
+	.empresas{
+		display: inline-block;
+		width: 142px;
+		height: 24px;
+		background: url("../img/l_embratel.png") 50% 50% no-repeat;
+		background-size: 95px auto;
+		text-indent: -9999em;
+		@include breakpoint(medium, 'max') {
+			width: 120px;
+		}
+	}
+
+	.network{
+		font-size: 0;
+		a{
+			transition: opacity 300ms ease-in-out;
+			display:inline-block;
+			width:53px;
+			height:62px;
+			background: url("../img/network.png") 50% 50% no-repeat;
+			vertical-align:top;
+			text-indent:-9999em;
+			@include breakpoint(medium, 'max') {
+				width: 50px;
+			}
+			&:hover{
+				opacity: .8;
+			}
+		}
+		.fb{background-position:0 50%;}
+		.in{background-position:-54px 50%;}
+		.yt{background-position:-105px 50%;}
+	}
+
+	.partner{
+		display: inline-block;
+		padding: 8px;
+		border:1px dashed $blue-l;
+	}
+}

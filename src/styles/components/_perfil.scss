@@ -1,0 +1,71 @@
+.perfil {
+    -webkit-animation: move 2s infinite alternate ease-in both;
+	animation: move 2s infinite alternate ease-in both;
+    border-radius: 50%;
+    height: 200px;
+	margin-bottom: 60px;
+    width: 200px;
+}
+
+.content {
+    -ms-flex-item-align: center;
+    align-self: center;
+	&.shadow{
+		position: relative;
+		&:before{
+			content: '';
+			position: absolute;
+			background-color: rgba(0,0,0,0.3);
+			border-radius: 50%;
+			width: 200px;
+			height: 20px;
+			top: calc(50% + 10px);
+			left: 50%;
+			margin: 0 0 0 -100px;
+			z-index: 0;
+			-webkit-animation: shadow 2s infinite alternate ease-out both;
+			animation: shadow 2s infinite alternate ease-out both;
+		}
+	}
+}
+
+.inline-list {
+    list-style: none;
+    margin: 25px 0;
+    padding: 0;
+    text-align: center
+}
+
+.inline-list li {
+    display: inline-block
+}
+
+.linkDefault{
+    color: #444;
+    display: block;
+    padding: 5px 10px;
+	&:after{
+		border-top: 1px solid transparent;
+		content: "";
+		display: block;
+		margin-top: 7px;
+		transition: all 0.4s ease;
+		width: 100%
+	}
+	&:hover{
+		color: #000;
+    	text-decoration: none;
+		&:after{
+			color: #444;
+			border-top: 1px solid #444;
+			transition: all 0.4s ease
+		}
+	}
+}
+
+.linkCurriculo{
+	@include breakpoint(extra-small, max){
+		margin-bottom: 20px;
+	}
+}
+

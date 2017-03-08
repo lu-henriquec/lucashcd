@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+
+//------------------------------------
+//  CONTAINER
+//------------------------------------
+.container {
+    background-color: #f1f1f1;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center
+}
+
+.container__full {
+	@include breakpoint(medium, 'max') {
+		position: relative;
+		left: auto;
+		bottom: auto;
+		transform: none;
+	}
+	bottom: 0;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+}

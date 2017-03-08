@@ -1,0 +1,61 @@
+@charset 'UTF-8';
+
+.flex-row {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+// $lg-column | $md-column | $sm-column | $xs-column
+// @include flex-col(6, 4, 2, 1);
+
+@mixin flex-col(
+	$lg-column: 1,    $md-column: 1,    $sm-column: 1, $xs-column: 1,
+	$lg-media: 'min', $md-media: 'min', $sm-media: 'min', $xs-media: 'min'
+) {
+	@include breakpoint(0, $xs-media) {
+		background-color: #dd0;
+		flex-basis: (100% / $xs-column);
+		max-width: (100% / $xs-column);
+	}
+
+	@if $sm-column != 1 {
+		@include breakpoint(small, $sm-media) {
+			background-color: #0d0;
+			flex-basis: (100% / $sm-column);
+			max-width: (100% / $sm-column);
+		}
+	}
+
+	@if $md-column != 1 {
+		@include breakpoint(medium, $md-media) {
+			background-color: #d0d;
+			flex-basis: (100% / $md-column);
+			max-width: (100% / $md-column);
+		}
+	}
+
+	@if $lg-column != 1 {
+		@include breakpoint(large, $lg-media) {
+			background-color: #ccc;
+			flex-basis: (100% / $lg-column);
+			max-width: (100% / $lg-column);
+		}
+	}
+
+
+	// @include breakpoint(medium, 'min') {
+	// 	flex-basis: (100% / 6);
+	// 	max-width: (100% / 6);
+	// }
+
+	// @include breakpoint(medium, 'max') {
+	// 	flex-basis: (100% / 3);
+	// 	max-width: (100% / 3);
+	// }
+
+	// @include breakpoint(small, 'max') {
+	// 	flex-basis: (100% / 1);
+	// 	max-width: (100% / 1);
+	// }
+}
+

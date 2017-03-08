@@ -1,0 +1,35 @@
+@charset 'UTF-8';
+
+//------------------------------------
+//  ICONS
+//------------------------------------
+
+.icon{
+	position: relative;
+	&:before{
+		content: "";
+		height: 32px;
+		position: absolute;
+		right: -15px;
+    	top: 75px;
+		width: 33px;
+		@include breakpoint(small, 'max'){
+			bottom: -50px;
+			margin-left: -16px;
+			top: initial;
+			right: initial;
+		}
+	}
+}
+
+.icon-plus{
+	&:before{
+		background: transparent url("../img/ico/plus.png") 0 0 no-repeat;
+	}
+}
+
+.icon-equal{
+	&:before{
+		background: transparent url("../img/ico/equal.png") 0 0 no-repeat;
+	}
+}

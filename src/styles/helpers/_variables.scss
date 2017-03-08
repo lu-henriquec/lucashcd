@@ -1,0 +1,160 @@
+@charset 'UTF-8';
+
+// https: //www.youtube.com/watch?v=MiQ_OSW9pLM
+
+//------------------------------------
+//  BASE
+//------------------------------------
+
+@import 'bootstrap/variables';
+
+// Website background (can use color or image)
+$website-bg-color: #ffffff !default;
+
+
+// Enable font smoothing?
+$enable-font-smoothing: true !default;
+
+
+// Base font sizes and colors
+$base-font-size         : 16px !default;
+$base-line-height       : 24px !default;
+$base-font-color        : #444 !default;
+$base-link-color        : #83838f !default;
+$base-heading-color     : #181818 !default;
+$base-sub-heading-color : #808080 !default;
+
+
+// Element spacing and line-height ratio
+$base-spacing-unit: $base-line-height !default;
+$half-spacing-unit: $base-spacing-unit / 2 !default;
+$line-height-ratio: $base-line-height / $base-font-size;
+
+$base-main: 1080px;
+
+
+
+
+
+
+//------------------------------------
+//  RESPONSIVE
+//------------------------------------
+
+// Breakpoints
+// $breakpoint-map: (
+// 	'extra-small' : 360px,
+// 	'small'       : 670px,
+// 	'medium'      : 768px,
+// 	'large'       : 980px,
+// 	'extra-large' : 1900px
+// );
+
+$breakpoint-map: (
+	'extra-small' : 360px,
+	'small'       : 670px,
+	'medium'      : 768px,
+	'large'       : 980px,
+	'extra-large' : 1900px
+);
+// Z-INDEX
+$z-index-map: (
+	'z-00'  : 0,
+	'z-10'  : 10,
+	'z-20'  : 20,
+	'z-30'  : 30,
+	'z-40'  : 40,
+	'z-50'  : 50,
+	'z-60'  : 60,
+	'z-70'  : 70,
+	'z-80'  : 80,
+	'z-90'  : 90,
+	'z-100' : 100
+);
+
+//------------------------------------
+//  PATHS
+//------------------------------------
+$cdn-path	: '//d3jpzy2yx10pg3.cloudfront.net/compracerta/';
+$img-path	: '/arquivos/';
+$font-path	: '/arquivos/'; //jussi cdn
+
+
+//------------------------------------
+//  COLORS
+//------------------------------------
+$color-one   : #ff7900;
+$color-two   : #01b6b3;
+$color-three : #4f4139;
+$color-four  : #fff200;
+$color-five  : #463536;
+
+
+
+
+$blue-r:	#064585 !default;// Regular
+$blue-l:	#16a4d2 !default;// Light
+$blue-m:	#174078 !default;// Medium
+$blue-d:	#08244a !default;// Dark
+
+$gray-r:	#cccccc !default;// Regular
+$gray-l:	#e5eaec !default;// Light
+
+$yellow-r:	#ffd204 !default;// Regular
+
+
+
+
+
+
+
+
+
+// Selection colors
+$selection-background:  $color-two !default;
+$selection-color:       #ffffff !default;
+
+
+// Form placeholder colors
+$placeholder-color:     #bbbbbb !default;
+
+
+// Colors used for our objects' borders, etc
+$object-ui-color:       #cccccc !default;
+$object-validate-color: #dc2828 !default;
+
+
+// Dropdown colors
+$dropdown-bg-color:     #ffffff !default;
+$dropdown-border-color: #ededed !default;
+$dropdown-hover-color:  #f3f8f8 !default;
+$dropdown-header-color: #aaaaaa !default;
+
+
+// Button font color
+$button-bg-color:         $color-one !default;
+$button-font-color:       #ffffff !default;
+$button-hover-font-color: #ffffff !default;
+
+
+// Background colors
+$bg-colors: (
+	'red'        : $color-one,
+	'dark-gray'  : $color-two,
+	'gray'       : $color-three,
+	'light-gray' : $color-four,
+);
+
+// Type colors
+$type-colors: (
+	'red'        : $color-one,
+	'dark-gray'  : $color-two,
+	'gray'       : $color-three,
+	'light-gray' : $color-four,
+);
+
+
+
+//------------------------------------
+//  Components
+//------------------------------------

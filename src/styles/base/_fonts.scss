@@ -1,0 +1,80 @@
+@charset 'UTF-8';
+//------------------------------------
+//  FONTS
+//------------------------------------
+
+@font-face {
+	font-family: 'proximanova-regular';
+	src: url('../fonts/proximanova-regular.eot');
+	src: url('../fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/proximanova-regular.woff') format('woff'),
+		 url('../fonts/proximanova-regular.ttf') format('truetype'),
+		 url('../fonts/proximanova-regular.svg#proximanova-regular') format('svg');
+	font-weight: normal;
+	font-style: normal;}
+
+@font-face {
+	font-family: 'proximanova-light';
+	src: url('../fonts/proximanova-light.eot');
+	src: url('../fonts/proximanova-light.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/proximanova-light.woff') format('woff'),
+		 url('../fonts/proximanova-light.ttf') format('truetype'),
+		 url('../fonts/proximanova-light.svg#proximanova-light') format('svg');
+	font-weight: normal;
+	font-style: normal;}
+
+@font-face {
+	font-family: 'proximanova-bold';
+	src: url('../fonts/proximanova-bold.eot');
+	src: url('../fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/proximanova-bold.woff') format('woff'),
+		 url('../fonts/proximanova-bold.ttf') format('truetype'),
+		 url('../fonts/proximanova-bold.svg#proximanova-bold') format('svg');
+	font-weight: normal;
+	font-style: normal;}
+
+@font-face {
+	font-family: 'gotham-bold';
+	src: url('../fonts/gotham-bold.eot');
+	src: url('../fonts/gotham-bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/gotham-bold.woff') format('woff'),
+		 url('../fonts/gotham-bold.ttf') format('truetype'),
+		 url('../fonts/gotham-bold.svg#gotham-bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gotham-book';
+	src: url('../fonts/gotham-book.eot');
+	src: url('../fonts/gotham-book.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/gotham-book.woff') format('woff'),
+		 url('../fonts/gotham-book.ttf') format('truetype'),
+		 url('../fonts/gotham-book.svg#gotham-book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'gotham-medium';
+	src: url('../fonts/gotham-medium.eot');
+	src: url('../fonts/gotham-medium.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/gotham-medium.woff') format('woff'),
+		 url('../fonts/gotham-medium.ttf') format('truetype'),
+		 url('../fonts/gotham-medium.svg#gotham-medium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$proximanova-regular:	'proximanova-regular', Helvetica, Arial, sans-serif !default;
+$proximanova-light:		'proximanova-light', Helvetica, Arial, sans-serif !default;
+$proximanova-bold:		'proximanova-bold', Helvetica, Arial, sans-serif !default;
+$gotham-bold:			'gotham-bold', Helvetica, Arial, sans-serif !default;
+$gotham-book:			'gotham-book', Helvetica, Arial, sans-serif !default;
+$gotham-medium:			'gotham-medium', Helvetica, Arial, sans-serif !default;
+
+
+// BASE FONT-FAMILY
+// $base-font-family         : 'Arial', sans-serif !default;
+$base-font-family         : $gotham-book;
+$base-print-font-family   : Georgia, 'Times New Roman', Times, serif !default;

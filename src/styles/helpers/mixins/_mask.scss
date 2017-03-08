@@ -1,0 +1,7 @@
+@charset 'UTF-8';
+
+@mixin mask {
+	background-color: #000;
+	transition: background 400ms ease-out 170ms;
+	width: 100%
+}

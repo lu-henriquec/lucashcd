@@ -1,0 +1,10 @@
+@charset 'UTF-8';
+
+//------------------------------------
+//  Z-INDEX
+//------------------------------------
+
+@each $className, $indexValue in $z-index-map {
+	.#{$className},
+	%#{$className} { z-index: $indexValue; }
+}

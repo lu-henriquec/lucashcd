@@ -1,0 +1,38 @@
+@charset 'UTF-8';
+
+//------------------------------------
+//  MIXINS
+//------------------------------------
+
+// http: //www.youtube.com/watch?v=umDr0mPuyQc
+
+//BOOTSRAP MIXINS
+// @import 'bootstrap/mixins/grid';
+// @import 'bootstrap/mixins/grid-framework';
+// @import 'bootstrap/mixins/center-block';
+// @import 'bootstrap/mixins/hide-text';
+// @import 'bootstrap/mixins/reset-text';
+// @import 'bootstrap/mixins/size';
+// @import 'bootstrap/mixins/responsive-visibility';
+// @import 'bootstrap/mixins/tab-focus';
+// @import 'bootstrap/mixins/forms';
+// @import 'bootstrap/mixins/opacity';
+
+//Lucas/CONCISE MIXIN
+@import 'mixins/breakpoint';
+// @import 'mixins/conditional';
+@import 'mixins/box-sizing';
+// @import 'mixins/box-shadow';
+@import 'mixins/font-size';
+// @import 'mixins/gradient';
+// @import 'mixins/replace-text';
+// @import 'mixins/spinner';
+// @import 'mixins/transition';
+// @import 'mixins/clearfix';
+// @import 'mixins/content-before';
+// @import 'mixins/placeholder';
+// @import 'mixins/flex-grid';
+// @import 'mixins/mask';
+
+//FAMILY NTH HELPERS
+//@import 'family.scss/family';

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+//------------------------------------
+//  BUTTONS
+//------------------------------------
+.btn{
+	display: inline-block;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 14px 60px;
+	border:none;
+	border-radius: 2em;
+	font-family: $proximanova-light;
+	@include font-responsive(24);
+	color: #000;
+	background-color: $yellow-r;
+	text-align: center;
+	text-decoration: none!important;
+	overflow: hidden;
+	position: relative;
+}

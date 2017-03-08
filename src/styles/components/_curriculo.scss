@@ -1,0 +1,41 @@
+.headerCurriculo{
+	@include font-responsive(12);
+	color: #608B4E;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.conteudoCurriculo{
+	@include font-responsive(12);
+	color: #fff;
+	text-align: left;
+}
+
+.comment{
+	color: #608B4E;
+}
+
+.objJson{
+	margin-left: 1em;
+}
+
+.titleObj{
+	color: #fff;
+	margin-left: 1em;
+}
+
+.lineObj{
+	margin-left: 2em;
+}
+
+.titleItem{
+	color: aqua;
+}
+
+.valueItem{
+	color: chocolate;
+}
+
+.item{
+	margin-left: 1.5em;
+}
