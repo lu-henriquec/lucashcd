@@ -1,7 +1,7 @@
 {
 	"name": "porfolio",
 	"description": "Portfolio",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"author": "Lucas Henrique",
 	"private": true,
 	"dependencies": {

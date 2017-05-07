@@ -1,7 +1,7 @@
-.modal{
+.modal {
     background:rgba(0, 0, 0, 0.5);
     bottom:0;
-    display: flex;
+    display: none;
     height:100%;
     left:0;
     position:fixed;
@@ -10,8 +10,8 @@
     z-index:9999;
     zoom:1;
 
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
 
     /* if modal content doesn't fit inside the overlay, display scrollbars */
     overflow:auto;
@@ -25,33 +25,74 @@
     transition: all 300ms ease-in-out;
 }
 
-.modalActive{
-    opacity: 1;
-    visibility: visible;
+.modalActive {
+    display: flex;
+    // opacity: 1;
+    // visibility: visible;
 }
 
-.page{
+.page {
     background-color: #2E2833;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    height: auto;
+    height: 80%;
     margin: auto;
     max-width: 950px;
-    overflow: initial;
+    overflow: auto;
     padding: 30px;
     width: 100%;
-    @include breakpoint(small, max){
+    @include breakpoint(small, max) {
         padding: 10px;
+    }
+    &::-webkit-scrollbar {
+        height: 15px;
+        padding-right: 15px;
+        width: 15px
+    }
+
+    &::-webkit-scrollbar-button {
+        height: 0px;
+        width: 0px
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #ffffff;
+        border: 0px none #ffffff;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #ffffff
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+        background: #ffffff
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #2E2833;
+        border: 0px none #ffffff;
+    }
+
+    &::-webkit-scrollbar-track:hover {
+        background: #2E2833;
+    }
+
+    &::-webkit-scrollbar-track:active {
+        background: #2E2833;
+    }
+
+    &::-webkit-scrollbar-corner {
+        background: transparent
     }
 }
 
-.close{
+.close {
     height: 40px;
     position: absolute;
     right: 10px;
     top: 10px;
     width: 40px;
     &:after,
-    &:before{
+    &:before {
         background-color: #fff;
         content: '';
         height: 100%;
@@ -60,7 +101,7 @@
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
     }
-    &:after{
+    &:after {
         -webkit-transform: rotate(135deg);
         transform: rotate(135deg);
     }

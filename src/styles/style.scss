@@ -15,11 +15,12 @@
 
 @import 'helpers/variables';
 @import 'helpers/animation';
+@import 'helpers/animate';
 @import 'helpers/functions';
 @import 'helpers/mixins';
 
 //FLEXBOX GRID
-// @import 'components/grid';
+@import 'components/grid';
 
 
 //Animations

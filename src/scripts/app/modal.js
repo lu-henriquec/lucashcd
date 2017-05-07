@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = function() {
     var open        = $('.openCurriculo'),
@@ -7,11 +7,13 @@ module.exports = function() {
 
     open.click(function(e) {
         e.preventDefault();
-        themodal.addClass('modalActive');
+        themodal.removeClass('slideOutDown');
+        themodal.addClass('modalActive slideInUp');
     });
 
     close.click(function(e) {
         e.preventDefault();
-        themodal.removeClass('modalActive');
+        themodal.removeClass('slideInUp');
+        themodal.addClass('slideOutDown');
     });
 };
